@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Proof of concept for the typescript virtual file system",
+  "private": true,
+  "scripts": {
+    "start": "parcel src/index.html --open --no-autoinstall",
+    "build": "parcel build src/index.html --cache-dir .parcel-cache",
+    "clean": "rimraf dist && rimraf .parcel-cache",
+    "serve": "http-server dist",
+    "format": "prettier --write src/**/* -u --no-error-on-unmatched-pattern"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.0.0-nightly.854",
+    "@parcel/validator-typescript": "2.0.0-nightly.854",
+    "@types/react": "^17.0.27",
+    "@types/react-dom": "^17.0.9",
+    "http-server": "^13.0.2",
+    "parcel": "2.0.0-nightly.852",
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.42.1",
+    "typescript": "^4.4.3"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
