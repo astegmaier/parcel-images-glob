@@ -5,7 +5,7 @@ const App = () => (
     <div>
       <h1>Images Imported with Glob Import</h1>
       {Object.entries(images).map(([imageName, imageUrl]) => (
-        <div>
+        <div key={imageUrl}>
           <h2>{imageName}</h2>
           <img src={imageUrl} width={300} />
         </div>
