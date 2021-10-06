@@ -1,7 +1,6 @@
 {
-  "name": "server",
+  "name": "parcel-image-test",
   "version": "1.0.0",
-  "description": "Proof of concept for the typescript virtual file system",
   "private": true,
   "scripts": {
     "start": "parcel src/index.html --open --no-autoinstall",
